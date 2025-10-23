@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 3 - Menu Buttons and Scrolling Menus</title>
+</head>
+<body>
+
+    <h2>Personal Information Form</h2>
+
+    <form method="post" action="mailto:put.your@email.address.here">
+
+        <!-- Title -->
+        <label><strong>Title:</strong></label><br>
+        <input type="radio" name="title" value="Mr"> Mr
+        <input type="radio" name="title" value="Mrs"> Mrs
+        <input type="radio" name="title" value="Miss"> Miss
+        <input type="radio" name="title" value="Ms"> Ms
+        <input type="radio" name="title" value="Dr"> Dr
+        <br><br>
+
+        <!-- Age group -->
+        <label><strong>Age:</strong></label><br>
+        <input type="radio" name="age" value="under20"> under 20 (&lt;19)
+        <input type="radio" name="age" value="20-29"> 20–29
+        <input type="radio" name="age" value="30-39"> 30–39
+        <input type="radio" name="age" value="40-49"> 40–49
+        <input type="radio" name="age" value="50-59"> 50–59
+        <input type="radio" name="age" value="over60"> over 60 (&gt;60)
+        <br><br>
+
+        <!-- Gender -->
+        <label><strong>Gender:</strong></label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <!-- Status -->
+        <label><strong>Status:</strong></label><br>
+        <input type="radio" name="status" value="Employed"> Employed
+        <input type="radio" name="status" value="Unemployed"> Unemployed
+        <input type="radio" name="status" value="Student"> Student
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label><strong>Date of Birth:</strong></label><br>
+        Day:
+        <select name="day">
+            <option value="">--Select Day--</option>
+            <!-- Days 1 to 31 -->
+            <script>
+                for(let i=1; i<=31; i++){
+                    document.write("<option value='"+i+"'>"+i+"</option>");
+                }
+            </script>
+        </select>
+
+        Month:
+        <select name="month">
+            <option value="">--Select Month--</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+
+        Year:
+        <select name="year">
+            <option value="">--Select Year--</option>
+            <script>
+                for(let y=1950; y<=2025; y++){
+                    document.write("<option value='"+y+"'>"+y+"</option>");
+                }
+            </script>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
