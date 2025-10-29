@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Italian Food Club</title>
+</head>
+<body>
+  <script>
+    // Ask user to confirm membership
+    var member = window.confirm('Please confirm you are a member of the Italian Food Club');
+
+    if (member) {
+      // Display a heading and a table of Italian dishes
+      document.write('<h2>Quick Meals from Italy Delivered To Your Door</h2>');
+      document.write('<table style="width: 40%; border-collapse: collapse;" border="1">');
+      document.write('<caption><b>Menu</b></caption>');
+      document.write('<tr><th>Item</th><th>Price</th></tr>');
+      document.write('<tr><td>Pizza Margherita</td><td>21,000 Lire</td></tr>');
+      document.write('<tr><td>Risotto Milanese</td><td>18,500 Lire</td></tr>');
+      document.write('<tr><td>Tortellini con Funghi</td><td>24,000 Lire</td></tr>');
+      document.write('</table>');
+    } else {
+      // If not a member, display alert and registration link
+      window.alert('Sorry, please go back to the membership enrolment page.');
+      document.write('<p><a href="http://www.foodshopping.co.it/registration/register/">Go to Registration Form</a></p>');
+    }
+  </script>
+</body>
+</html>
