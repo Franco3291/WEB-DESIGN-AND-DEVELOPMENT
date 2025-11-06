@@ -135,3 +135,30 @@ Francis Mwalimu (Franco)
 📧 [YourEmail@example.com
 ]
 💻 Passionate about front-end development, UI/UX, and interactive web design.
+⚙️ JavaScript Highlights
+
+This repository includes practical examples of how JavaScript enhances user experience on the web:
+
+- DOM Manipulation — dynamically update elements based on user actions  
+- Event Handling — respond to button clicks and form submissions  
+- Input Validation — check and sanitize user data before submission  
+- Conditional Logic — use `if`, `else`, and regular expressions for decision-making  
+- Real-time Feedback — show alerts or error messages instantly  
+- Code Organization — separate JS logic from HTML for maintainability  
+
+Example:
+```js
+document.getElementById("submitBtn").addEventListener("click", function() {
+  const email = document.getElementById("email").value;
+  if (!email.includes("@")) {
+    alert("Invalid email address!");
+  } else {
+    alert("Form submitted successfully!");
+  }
+});
+▶️ How to Run JavaScript Files
+
+1. Open any HTML file (e.g., `form_text_entry.html`) in your browser.  
+2. Inspect the linked JavaScript file (e.g., `form_validation.js`).  
+3. Try filling out the form — JavaScript will validate and respond in real-time.  
+4. Open the browser console (`Ctrl + Shift + I`) to see log messages or debug outputs.
